@@ -4,6 +4,7 @@ import api.AuthorizationApi;
 import api.BookStoreApi;
 import helpers.WithLogin;
 import jdk.jfr.Description;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.*;
@@ -15,7 +16,7 @@ public class BookStoreTests extends TestBase {
     String bookName = "Speaking JavaScript";
     @Test
     @WithLogin
-    @Description("Удаление книги из коллекции")
+    @DisplayName("Удаление книги из коллекции")
     void deleteBookFromCollectionTest() {
 
         BookStoreApi apiSteps = new BookStoreApi();
