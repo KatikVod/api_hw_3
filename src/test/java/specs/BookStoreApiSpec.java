@@ -17,7 +17,7 @@ public class BookStoreApiSpec {
             .contentType(JSON);
 
     public static RequestSpecification authorisedRequestSpec(String token) {
-       return with()
+        return with()
                 .filter(withCustomTemplates())
                 .log().all()
                 .header("Authorization", "Bearer " + token)

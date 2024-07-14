@@ -18,7 +18,6 @@ public class TestBase {
         Configuration.pageLoadStrategy = "eager";
         Configuration.browserSize = "1920x1080";
     }
-
     @BeforeEach
     void beforeEach() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
