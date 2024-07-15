@@ -3,7 +3,6 @@ package tests;
 import api.AuthorizationApi;
 import api.BookStoreApi;
 import helpers.WithLogin;
-import jdk.jfr.Description;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

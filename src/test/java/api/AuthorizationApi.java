@@ -16,7 +16,7 @@ import static specs.BookStoreApiSpec.successful200ResponseSpec;
 public class AuthorizationApi {
 
     public static String userId, token, expires;
-    public static AuthConfig config = ConfigFactory.create(AuthConfig.class, System.getProperties());
+    public static AuthConfig config = ConfigFactory.create(AuthConfig.class);
 
     @Step("Авторизоваться в системе")
     public static AuthorizationResponseModel sendAuthorisationRequest() {
